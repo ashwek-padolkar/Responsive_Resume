@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;                  /* horizontally center items*/
+    align-items: center;                      /* vertically center items*/
+    min-height: 100vh;                        /* minimum height: 100%viewport height(viewport: full screen)*/
+}
+
+.mainContainer{
+    width: 100%;                             /* display width of container*/
+    max-width: 1100px;
+}
+
+.mainContainer .header{
+    max-width: 1100px;
+    /* min-height: 1000px; */
+    background-color: rgba(2,25,52);
+    display: grid;                           /* make the container in grid*/
+    grid-template-columns: 1fr 2fr;          /* display the left and right container-items in columns (1/3 fraction blue and 2/3 white*/
+    flex-direction: column-reverse;
+    margin: 50px;
+    margin-bottom: 0px;
+}
+
+.profile{
+    min-width: 315px;
+    background-color: rgba(2,25,52);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .border_line{
+    padding: 44px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile .imageFrame1{
+    min-width: 250px;
+    min-height: 250px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.profile .imageFrame1 .imageFrame2{
+    min-width: 210px;
+    min-height: 210px;
+    background: rgba(2,25,52);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.imageFrame2 .imageBox{
+    max-width: 180px;
+    max-height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.name{
+    /* min-width: 250px; */
+    height: 260px;
+    background: rgba(2,25,52);
+    color: rgb(255, 255, 255);
+    margin: 40px 40px 40px 0px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.name h1{
+    font-size: 100px;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 100px;
+}
+
+.name h2{
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 0.6em;
+    letter-spacing: 15px;
+    padding: 0px 20px 20px 20px;
+}
+
+.name h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 3em;
+    letter-spacing: 15px;
+    padding: 0px 20px 20px 20px;
+}
+
+.container{
+    background-color: white;
+    max-width: 1100px;
+    min-height: 1000px;
+    display: grid;                           /* make the container in grid*/
+    grid-template-columns: 1fr 2fr;          /* display the left and right container-items in columns (1/3 fraction blue and 2/3 white*/
+    margin: 0px 50px 50px 50px;
+}
+
+.container .left{
+    background-color: rgba(2,25,52);
+    padding: 40px;                           /* increase the size(display left container)*/
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfo{
+    padding-top: 40px;
+}
+
+.title{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul{
+    position: relative;
+}
+
+.contactInfo ul li {
+    position: relative;
+    list-style-type: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contactInfo ul li span{
+    color: white;
+    font-weight: 100;
+}
+
+.contactInfo.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #03a9f4;
+}
+
+.contactInfo.skill .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo.skill .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #03a9f4;
+}
+
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.interest ul li {
+    list-style: none;
+    color: white;
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.interest ul li .fa{
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+}
+
+.container .right{
+    background-color: white;
+    padding: 40px;                          /* increase the size(display left container)*/
+}
+
+.about{
+    margin: 35px 0px;
+}
+
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .degree{
+    min-width: 150px;
+}
+
+.about .box .degree h4{
+    color: #656c6f;
+    font-size: 16px;
+}
+
+.about .box .degree h5{
+    color: #848c90;
+    font-weight: 600;
+}
+
+.about .box .collegeInfo h4{
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4{
+    text-transform: uppercase;
+    color: #515455;
+    font-weight: 500;
+}
+
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #ece4e4;
+}
+
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #03a9f4;
+}
+
+.about.projects ul li{
+    list-style: none;
+    font-size: 17px;
+    color: #515455;
+    line-height: 40px;
+}
+
+@media (max-width: 930px){
+    .mainContainer .header{
+        grid-template-columns: 1fr;
+        align-items: center;
+        margin: 50px 50px 0px 50px;
+    }
+    .profile .border_line{
+        padding: 44px 0px 0px 0px;
+        border-bottom: 0px;
+        margin-top: 0px 40px 0px 40px;
+    }
+
+    .name{
+        margin: 0px 40px 0px 40px;
+        border-left: 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .container .left{
+        padding: 0px 40px 40px 40px;
+    }
+
+    .interest ul{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .container .right{
+        padding: 0px 40px 0px 40px;
+    }
+}
+
+@media (max-width: 690px){
+    .mainContainer{
+        min-width: 100%;                             /* display width of container*/
+        /* max-width: 1100px; */
+    }
+
+    .mainContainer .header{
+        margin: 50px;
+        margin-bottom: 0px;
+    }
+    
+    .name{
+        height: 170px;
+        margin: 0px;
+        border-left: 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .name h1{
+        font-size: 40px;
+        padding: 20px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+    
+    .name h2{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 0.1em;
+        letter-spacing: 8px;
+        padding: 0px 20px 20px 20px;
+    }
+    
+    .name h3{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 3em;
+        letter-spacing: 4px;
+        padding: 0px 20px 20px 20px;
+    }
+
+    .interest ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .about .box{
+        flex-direction: column;
+    }
+
+    .about .box .degree{
+        margin-bottom: 5px;
+    }
+
+    .skills .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
